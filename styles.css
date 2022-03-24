@@ -1,0 +1,47 @@
+* {
+  font-family: "Bitter", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(193, 214, 179);
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#side-container {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  width: 700px;
+  height: 700px;
+}
+
+.cell {
+  border: 1px dotted black;
+  width: auto;
+}
+
+.color {
+  background-color: orange;
+}
+
+#new-grid-btn {
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(184, 184, 184);
+}
